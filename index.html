@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Maickel Siqueira</title>
+    <meta charset="UTF-8">
+    
+    <style>
+
+        html {
+            height: 98%;
+            align-content: center;
+        }
+        .content {
+            max-width: 800px;
+        }
+
+        nav{
+            display: inline;
+            float:left;
+            height: 100%;
+            text-align: justify;
+        }
+        body{
+            font-family: Helvetica, sans-serif;
+            font-size: 14px;
+            height: 100%;
+            margin: 0px;
+        }
+        div{
+            padding: 30px;
+        
+        }
+
+        h1,h2,h3,h4{
+            margin: 20px 10px 5px 10px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+
+        .fundo-verde{
+            background-color: darkgreen;
+            color: white;
+            margin: 0px;
+            padding: 12px; 
+        }
+        linha {
+            border-bottom: solid 3px rgb(167,206,71);
+            padding: 0px 60%;
+            color: rgb(255,250,235);
+            margin: 0px;
+            width: 500px;
+            box
+        }
+        #lateral-esquerda{
+            background-color: rgb(255,250,235);
+            width: 20%;
+            margin-left: 20%;
+            overflow: hidden;
+        }
+        a{
+            color: darkgreen;
+        }
+        #lateral-direita{
+            width:40%;
+        }
+
+        #fim{
+            position: bottom;
+            font-size:12px;
+            font-weight: normal;
+            text-align: center;
+        }
+
+        p{
+            margin:15px 10px;
+        }
+        esconder {
+            font-size:  12px;
+            margin-top: 5px;
+            font-weight: normal;
+            float: right;
+            color:darkseagreen;
+        }
+    </style>
+    
+</head>
+    
+<body>
+    
+    <nav id="lateral-esquerda">
+        <p></p>
+        <img src="/fotoCurriculo.png" alt="Foto Curriculo" width="230px"  class="center">
+        <h1 style="text-align: center">MAICKEL <br>
+        SIQUEIRA</h1>
+        <linha></linha>
+        <h2 style="text-align: center">Administrador e Estudante de ADS</h2>
+        <p>Brasileiro, casado, residente em
+         São José – SC. </p>
+        <h4>Línguas:</h4>
+        <p>Português(Nativo), Inglês(Avançado)
+        e Espanhol(Básico).
+        
+        <h4>Ferramentas:</h4>
+        <p> Corel Draw; Photoshop; Pacote Office;
+        Java, SQL, HTML (intermediários);
+         CSS e JavaScript (básicos).</p>
+        
+        <linha></linha>
+        <h4>Contato:</h4>
+        
+        <p>(48) 99168-6182</p>
+        
+        <h4>Linkedin / GitHub:</h4> 
+        <p><a href="https://www.linkedin.com/in/maickel-siqueira-58a747a9">www.linkedin.com/in/maickel-siqueira-58a747a9</a></p>
+        <p><a href="https://github.com/mksiq">www.github.com/mksiq</a></p>
+         <h4>e-mail:</h4>
+        <p><a href="mailto:maickelsiqueira@gmail.com">maickelsiqueira@gmail.com</a></p>
+
+        
+        
+        </nav><!--
+
+    --><nav id="lateral-direita">
+        
+        <h2 class="fundo-verde" ms-aba > EDUCAÇÃO<esconder>Clique para esconder</esconder></h2>
+
+        <aba><h4>UFSC – Universidade Federal de Santa Catarina</h4>
+        <p>[2004] – [2009]</p>
+        <p>Bacharel em Administração – Graduado.</p>
+
+        <h4>Senac SC</h4>
+        <p>[2018] – [2020]</p>
+        <p>Graduação Análise e Desenvolvimento de Sistemas. Cursando.</p></aba>
+        <br>
+        
+        <h2 class="fundo-verde" ms-aba>EXPERIÊNCIA DE TRABALHO<esconder>Clique para esconder</esconder></h2>
+
+
+        <aba><h4>ELEVA GUINDASTES - Administrador </h4> 
+        <p>[2014] – [ATUAL]</p>
+        <p>Planejamento e criação da empresa realizando toda a administração
+        operacional e gerencial. Hoje estou focado apenas no marketing
+        digital da mesma devido ao interesse pessoal de entrar na área
+        de tecnologia.</p>
+
+
+        <h4>MIX POTATO KOBRASOL – Sócio-Administrador  </h4>
+        <p>[2012] – [2016]</p>
+        <p>Implementação de unidade franqueada da Mix Potato localizado no
+        Bairro Kobrasol em São José - SC. Realizei projeto de implementação,
+        atividades de controle de estoque, planejamento financeiro e fiscal,
+        gestão de RH e gestão de marketing.</p>
+
+        <h4>ARTMOTO  - Sócio-Administrador e Vendedor</h4>
+        <p>[2007] – [2015]</p>
+        <p>Realizei atividade gerencial, marketing e operacional em todo o âmbito
+        da empresa, liderando até 12 colaboradores. Proporcionou grande
+        experiência no setor de comércio de veículos, quanto a documentação
+        e legislação na área, assim como  operações de crédito, técnicas de
+        atendimento ao cliente, marketing estratégico e administração financeira.</p></aba>
+        <br>
+        <h2 class="fundo-verde" id="fim">Desenvolvido em Html, CSS e JavaScript.</h2>
+        </nav>
+        
+</body>
+</html>
+
+<script>
+        document.querySelectorAll('[ms-aba]').forEach(pasta => {
+            pasta.onclick = function(e){
+                const aba = pasta.nextElementSibling
+                const displayAtual = aba.style.display
+                aba.style.display = displayAtual === 'none' ? 'block': 'none'
+            }
+        })
+</script>
